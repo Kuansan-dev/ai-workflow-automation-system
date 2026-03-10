@@ -1,0 +1,19 @@
+services:
+
+  postgres:
+    image: postgres:16
+    container_name: ai_workflow_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: ai_workflow
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:7
+    container_name: ai_workflow_redis
+    restart: always
+    ports:
+      - "6379:6379"
