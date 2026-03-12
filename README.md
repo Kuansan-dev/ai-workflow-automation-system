@@ -1,8 +1,6 @@
 # AI Workflow Automation System
 
-An asynchronous AI workflow orchestration platform built with FastAPI, Celery, Redis, and PostgreSQL.
-
-This system allows users to define workflows consisting of AI-powered steps (such as summarization or task extraction) and execute them asynchronously using distributed workers.
+An asynchronous AI workflow allows users to define workflows consisting of AI-powered steps (summarization/ task extraction) and execute them asynchronously using distributed workers.
 
 ---
 
@@ -147,21 +145,3 @@ Result:
 "status": "completed",
 "output_json": "Tasks extracted from meeting notes..."
 }
-
-
----
-
-## Future Improvements
-
-• Visual workflow builder  
-• Workflow scheduling  
-• Multi-step agent workflows  
-• Kubernetes deployment  
-• Streaming AI responses  
-
----
-
-## Author
-
-Sanzhar Kuanysh  
-BSc Artificial Intelligence — Vrije Universiteit Amsterdam
