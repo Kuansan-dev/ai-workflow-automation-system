@@ -10,8 +10,6 @@ Client → FastAPI API → Redis Queue → Celery Worker → AI Execution → Po
 
 The system uses a message queue to distribute workflow execution tasks to background workers.
 
----
-
 ## Features
 
 • Create AI workflows  
@@ -21,8 +19,6 @@ The system uses a message queue to distribute workflow execution tasks to backgr
 • Background processing with Celery workers  
 • REST API with interactive Swagger documentation  
 • Docker-based infrastructure  
-
----
 
 ## Tech Stack
 
@@ -40,8 +36,6 @@ Infrastructure
 AI Integration
 - OpenAI API
 
----
-
 ## Project Structure
 
 
@@ -57,9 +51,6 @@ core/ → configuration
 infra/
 docker-compose.yml
 
-
----
-
 ## Setup Instructions
 
 ### 1 Install dependencies
@@ -69,9 +60,6 @@ cd backend
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
-
-
----
 
 ### 2 Start infrastructure
 
@@ -85,8 +73,6 @@ This starts:
 - PostgreSQL
 - Redis
 
----
-
 ### 3 Run FastAPI
 
 
@@ -98,9 +84,6 @@ Swagger API documentation:
 
 
 http://127.0.0.1:8000/docs
-
-
----
 
 ### 4 Start Celery worker
 
